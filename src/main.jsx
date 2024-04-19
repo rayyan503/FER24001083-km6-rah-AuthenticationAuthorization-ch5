@@ -8,10 +8,13 @@ import DataHero from "./Pages/DataHero.jsx";
 import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import HomePage from "./Pages/HomePage.jsx";
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
   {
     path: "/login",
     element: <Login />,
